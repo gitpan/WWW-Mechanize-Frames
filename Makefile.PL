@@ -5,7 +5,10 @@ use ExtUtils::MakeMaker;
 WriteMakefile(
     NAME              => 'WWW::Mechanize::Frames',
     VERSION_FROM      => 'lib/WWW/Mechanize/Frames.pm', # finds $VERSION
-    PREREQ_PM         => {}, # e.g., Module::Name => 1.1
+    PREREQ_PM         => {
+        'Clone::PP' => 0,
+        'WWW::Mechanize' => 0,
+    },
     ($] >= 5.005 ?     ## Add these new keywords supported since 5.005
       (ABSTRACT_FROM  => 'lib/WWW/Mechanize/Frames.pm', # retrieve abstract from module
        AUTHOR         => 'Nick Stoianov <cpanperl@yahoo.com>') : ()),
