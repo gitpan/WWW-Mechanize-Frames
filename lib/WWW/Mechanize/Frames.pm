@@ -2,7 +2,7 @@ package WWW::Mechanize::Frames;
 
 use strict;
 use warnings FATAL => 'all';
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use base qw( WWW::Mechanize );
 use Clone::PP qw(clone);
@@ -66,14 +66,9 @@ None by default.
 
 =head1 SEE ALSO
 
-Mention other useful documentation such as the documentation of
-related modules or operating system documentation (such as man pages
-in UNIX), or any relevant external documentation such as RFCs or
-standards.
-
-If you have a mailing list set up for your module, mention it here.
-
-If you have a web site set up for your module, mention it here.
+WWW::Mechanize
+Clone::PP
+LWP::UserAgent
 
 =head1 AUTHOR
 
